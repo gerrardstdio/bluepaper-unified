@@ -1,0 +1,66 @@
+{
+  "slug": "andika-rachel",
+  "template": "template-1",
+  "status": "live",
+  "manageCode": "wuh7ptzr",
+  "activeUntil": "2027-03-17T15:59:59.999Z",
+  "suspendedAt": null,
+  "couple": {
+    "groom": "Andika",
+    "bride": "Rachel",
+    "weddingDateLabel": "",
+    "brideParents": "Bambang",
+    "groomParents": "",
+    "brideIg": "",
+    "groomIg": ""
+  },
+  "weddingDate": "",
+  "photos": {
+    "cover": "",
+    "hero": "",
+    "bride": "",
+    "groom": "",
+    "journey": "",
+    "event": "",
+    "streaming": "",
+    "rsvp": "",
+    "wishes": "",
+    "gallery": "",
+    "gift": "",
+    "thankyou": ""
+  },
+  "gallery": [],
+  "musicUrl": "",
+  "guests": [
+    {
+      "id": "9d3fb09d-d6e6-4eeb-88ed-7c157a70ed6b",
+      "token": "tamu-undangan",
+      "name": "Tamu Undangan",
+      "createdAt": "2026-09-17T18:24:22.730Z",
+      "shared": false,
+      "sharedAt": null
+    }
+  ],
+  "journeys": [],
+  "events": [],
+  "calendarUrl": "",
+  "streamingUrl": "",
+  "galleryVideoUrl": "",
+  "giftAccounts": [],
+  "giftAddress": {
+    "name": "",
+    "recipient": "",
+    "lines": [],
+    "address": ""
+  },
+  "heroVerseText": "",
+  "heroVerseRef": "",
+  "company": {
+    "name": "amplop-biru.co",
+    "copyrightYear": 2026,
+    "whatsapp": "",
+    "socials": []
+  },
+  "createdAt": "2026-09-17T18:24:22.731Z",
+  "updatedAt": "2026-09-19T14:51:34.602Z"
+}
