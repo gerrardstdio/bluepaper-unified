@@ -141,7 +141,7 @@ function listCustomers(root) {
       if (!data) return null;
       return {
         slug: data.slug || d.name,
-        template: data.template || "template-1",
+        template: data.template || "the-amora",
         status: data.status || "live",
         couple: data.couple || {},
         manageCode: data.manageCode || "",
@@ -161,7 +161,7 @@ function checkAuth(req) {
 function emptyWedding(slug) {
   return {
     slug: safeSlug(slug),
-    template: "template-1",
+    template: "the-amora",
     status: "live",
     manageCode: "",
     activeUntil: null,
@@ -493,7 +493,7 @@ export default function adminApiPlugin() {
                   ? body.guests
                   : base.guests,
               ),
-              template: body.template || "template-1",
+              template: body.template || "the-amora",
               status: body.status || "live",
               manageCode: String(body.manageCode || "").trim(),
               activeUntil:

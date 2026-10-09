@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import CataloguePage from "./pages/CataloguePage";
-import NotFoundPage from "./templates/template-1/pages/NotFoundPage";
+import NotFoundPage from "./templates/the-amora/pages/NotFoundPage";
 import AdminLogin from "./pages/admin/AdminLogin";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminEdit from "./pages/admin/AdminEdit";
@@ -50,11 +50,11 @@ export default function App() {
         <Route path="/live/:customerSlug" element={<LiveInvitationPage />} />
 
         <Route
-          path="/demo/template-1/:coupleSlug/:guestSlug"
+          path="/demo/the-amora/:coupleSlug/:guestSlug"
           element={<DemoInvitationPage />}
         />
         <Route
-          path="/demo/template-1/:coupleSlug"
+          path="/demo/the-amora/:coupleSlug"
           element={<DemoInvitationPage />}
         />
         <Route

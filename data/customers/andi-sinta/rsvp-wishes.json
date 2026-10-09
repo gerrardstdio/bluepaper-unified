@@ -1,9 +1,33 @@
 [
   {
+    "id": "767ad6b2-3589-438b-b45c-7b76ac73e169",
+    "createdAt": "2026-10-09T11:51:58.965Z",
+    "nama": "Andi Pratama",
+    "ucapan": "Selamat menempuh hidup baru! Semoga bahagia selalu.",
+    "kehadiran": "hadir",
+    "jumlahTamu": 1
+  },
+  {
+    "id": "9ace40b5-7fb2-469c-b5e7-ec5451775ed4",
+    "createdAt": "2026-10-09T11:50:24.591Z",
+    "nama": "Gerrard Studio",
+    "ucapan": "Happy wedding! Semoga langgeng dan penuh cinta.",
+    "kehadiran": "hadir",
+    "jumlahTamu": 1
+  },
+  {
+    "id": "01f82e63-8db5-4ead-ae2d-940b310feda7",
+    "createdAt": "2026-10-09T11:49:53.019Z",
+    "nama": "Rizky Ramadhan",
+    "ucapan": "Selamat menikah! Semoga selalu bahagia bersama.",
+    "kehadiran": "hadir",
+    "jumlahTamu": 1
+  },
+  {
     "id": "963a1d7c-6acf-4fe1-93e8-e5734ce00d10",
     "createdAt": "2026-09-14T14:06:45.446Z",
     "nama": "Cece",
-    "ucapan": "eorbfedbfrieyf",
+    "ucapan": "Selamat ya! Semoga jadi keluarga yang harmonis.",
     "kehadiran": "hadir",
     "jumlahTamu": 1
   }

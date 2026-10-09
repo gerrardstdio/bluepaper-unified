@@ -111,7 +111,7 @@ export default function AdminDashboard() {
   const [groom, setGroom] = useState("");
   const [bride, setBride] = useState("");
   const [manageCode, setManageCode] = useState(() => randomManageCode());
-  const [template, setTemplate] = useState("template-1");
+  const [template, setTemplate] = useState("the-amora");
   const [createDays, setCreateDays] = useState(30);
   const [creating, setCreating] = useState(false);
   const [busySlug, setBusySlug] = useState("");
@@ -457,7 +457,7 @@ export default function AdminDashboard() {
                   onChange={(e) => setTemplate(e.target.value)}
                   className="mt-1.5 w-full border border-neutral-300 px-3 py-2.5 text-sm outline-none focus:border-neutral-800"
                 >
-                  <option value="template-1">template-1 — Amplop Biru</option>
+                  <option value="The Amora">The Amora — Amplop Biru</option>
                   <option value="template-2">template-2 — (belum)</option>
                 </select>
               </label>

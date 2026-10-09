@@ -1,0 +1,230 @@
+/* invitation-ui.css — tipografi & util konsisten untuk template undangan
+   Import sekali di InvitationPage / main: import "../components/styles/invitation-ui.css"
+*/
+
+/* ——— Tipografi responsif (tablet & HP terbaca jelas) ——— */
+.inv-label {
+  font-size: 0.75rem; /* 12px */
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+@media (min-width: 640px) {
+  .inv-label {
+    font-size: 0.8125rem; /* 13px */
+    letter-spacing: 0.38em;
+  }
+}
+@media (min-width: 768px) {
+  .inv-label {
+    font-size: 0.875rem; /* 14px */
+  }
+}
+
+.inv-name {
+  font-family: inherit; /* font-serif di className */
+  font-size: 2.75rem; /* ~44px mobile */
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+@media (min-width: 640px) {
+  .inv-name {
+    font-size: 3.25rem; /* 52px */
+  }
+}
+@media (min-width: 768px) {
+  .inv-name {
+    font-size: 3.75rem; /* 60px tablet */
+  }
+}
+@media (min-width: 1024px) {
+  .inv-name {
+    font-size: 3.5rem; /* panel sempit di desktop tetap proporsional */
+  }
+}
+
+.inv-body {
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.65;
+  letter-spacing: 0.02em;
+}
+@media (min-width: 640px) {
+  .inv-body {
+    font-size: 1.0625rem; /* 17px */
+  }
+}
+@media (min-width: 768px) {
+  .inv-body {
+    font-size: 1.125rem; /* 18px */
+  }
+}
+
+.inv-caption {
+  font-size: 0.8125rem; /* 13px */
+  line-height: 1.55;
+  letter-spacing: 0.04em;
+}
+@media (min-width: 640px) {
+  .inv-caption {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 768px) {
+  .inv-caption {
+    font-size: 0.9375rem;
+  }
+}
+
+.inv-btn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.7rem 1.35rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  transition: border-color 0.2s, background 0.2s;
+}
+.inv-btn-pill:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.18);
+}
+@media (min-width: 640px) {
+  .inv-btn-pill {
+    font-size: 0.8125rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+/* ——— Overlay foto: lebih terang agar wajah tetap terlihat ——— */
+.inv-photo-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* hanya gradient bawah lembut + sedikit gelap di area teks */
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.12) 38%,
+    rgba(0, 0, 0, 0.04) 70%,
+    transparent 100%
+  );
+}
+
+.inv-photo-overlay--hero {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.12) 0%,
+      rgba(0, 0, 0, 0.08) 40%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+}
+
+/* ——— Blok teks portrait (bride/groom) ——— */
+.inv-portrait-copy {
+  position: absolute;
+  z-index: 10;
+  bottom: 3.5rem;
+  display: flex;
+  max-width: min(20rem, 85vw);
+  flex-direction: column;
+}
+.inv-portrait-copy--left {
+  left: 1.5rem;
+  align-items: flex-start;
+  text-align: left;
+}
+.inv-portrait-copy--right {
+  right: 1.5rem;
+  align-items: flex-end;
+  text-align: right;
+}
+@media (min-width: 640px) {
+  .inv-portrait-copy {
+    bottom: 4rem;
+    max-width: min(22rem, 80vw);
+  }
+  .inv-portrait-copy--left {
+    left: 2rem;
+  }
+  .inv-portrait-copy--right {
+    right: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .inv-portrait-copy {
+    bottom: 4.5rem;
+    max-width: min(24rem, 70vw);
+  }
+  .inv-portrait-copy--left {
+    left: 2.5rem;
+  }
+  .inv-portrait-copy--right {
+    right: 2.5rem;
+  }
+}
+
+.inv-portrait-label {
+  position: absolute;
+  z-index: 10;
+  top: 2rem;
+}
+.inv-portrait-label--left {
+  left: 1.5rem;
+}
+.inv-portrait-label--right {
+  right: 1.5rem;
+}
+@media (min-width: 640px) {
+  .inv-portrait-label {
+    top: 2.5rem;
+  }
+  .inv-portrait-label--left {
+    left: 2rem;
+  }
+  .inv-portrait-label--right {
+    right: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .inv-portrait-label {
+    top: 3rem;
+  }
+  .inv-portrait-label--left {
+    left: 2.5rem;
+  }
+  .inv-portrait-label--right {
+    right: 2.5rem;
+  }
+}
+
+/* Hero content width stabil di semua device */
+.inv-hero-stack {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  max-width: 22rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+@media (min-width: 640px) {
+  .inv-hero-stack {
+    max-width: 26rem;
+  }
+}
+@media (min-width: 768px) {
+  .inv-hero-stack {
+    max-width: 28rem;
+  }
+}

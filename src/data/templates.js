@@ -13,7 +13,7 @@
 export const templates = [
   {
     id: 1,
-    slug: "template-1",
+    slug: "the-amora",
     coupleSlug: "andi-sinta",
     cat: "minimal",
     theme: "theme-ivory",

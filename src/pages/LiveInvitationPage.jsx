@@ -1,10 +1,10 @@
 // src/pages/LiveInvitationPage.jsx
 import { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
-import { resolveLiveContent } from "../templates/template-1/data/resolveContent";
+import { resolveLiveContent } from "../templates/the-amora/data/resolveContent";
 import { WeddingProvider } from "../context/WeddingContext";
-import InvitationPage from "../templates/template-1/pages/InvitationPage";
-import NotFoundPage from "../templates/template-1/pages/NotFoundPage";
+import InvitationPage from "../templates/the-amora/pages/InvitationPage";
+import NotFoundPage from "../templates/the-amora/pages/NotFoundPage";
 
 function findGuest(guests, param) {
   if (!param) return null;

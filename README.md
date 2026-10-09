@@ -14,7 +14,7 @@ src/
   data/templates.js         # registry card → demo URL
   pages/CataloguePage.jsx
   templates/
-    template-1/             # undangan #1 (lengkap)
+    The Amora/             # undangan #1 (lengkap)
       components/
       data/
       hooks/
